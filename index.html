@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+
+
+
+
+
+<body>
+
+    <div class="centered">
+        <div>
+            <h1>Kommunevalg Erikstad Kommune</h1>
+
+            <button id="popup-link">Trykk her for å stemme</button>
+        </div>
+
+        <div id="popup-window">
+            <div class="align">
+                <button onclick="Hvoted(); location.reload()" class="hbutton">Stem Høyre</button>
+                <!-- <p id="voteh"></p> -->
+            </div>
+
+            <div class="align">
+                <button onclick="APvoted(), location.reload()" class="apbutton">Stem Arbeiderpartiet</button>
+                <!-- <p id="voteap"></p> -->
+            </div>
+
+            <div class="align">
+                <button onclick="SPvoted(), location.reload()" class="spbutton">Stem Senterpartiet</button>
+                <!-- <p id="votesp"></p> -->
+            </div>
+
+            <div class="align">
+                <button onclick="FRPvoted(), location.reload()" class="frpbutton">Stem Fremskrittspartiet</button>
+                <!-- <p id="votefrp"></p> -->
+            </div>
+
+            <div class="align">
+                <button onclick="MDGvoted(), location.reload()" class="mdgbutton">Stem Miljøpartiet De Grønne</button>
+                <!-- <p id="votemdg"></p> -->
+            </div>
+
+            <div class="align">
+                <button onclick="KRFvoted(), location.reload()" class="krfbutton">Stem Kristelig Folkeparti</button>
+                <!-- <p id="votekrf"></p> -->
+            </div>
+
+            <div class="align">
+                <button onclick="RDvoted(), location.reload()" class="rdbutton">Stem Rødt</button>
+                <!-- <p id="voterd"></p> -->
+            </div>
+
+            <div class="align">
+                <button onclick="SVvoted(), location.reload()" class="svbutton">Stem Sosialiatisk Venstreparti</button>
+                <!-- <p id="votesv"></p> -->
+            </div>
+
+            <div class="align">
+                <button onclick="Vvoted(), location.reload()" class="vbutton">Stem Venstre</button>
+                <!-- <p id="votev"></p> -->
+            </div>
+
+            <div class="seperate">
+                <button onclick="reset(), location.reload()" id="reset-button">Reset</button>
+
+                <button id="close-button">Close</button>
+            </div>
+
+
+        </div>
+        
+
+        
+        <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
